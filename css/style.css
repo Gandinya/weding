@@ -637,19 +637,23 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-gallery-list {
+ display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+
+  justify-content: center; 
   position: relative;
-  float: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto; 
   width: 100%;
+
+  list-style: none;
 }
 #fh5co-gallery-list li {
   display: block;
