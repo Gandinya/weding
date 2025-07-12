@@ -1843,3 +1843,67 @@ form label {
   transform: scale(0.8);
   opacity: 0;
 }
+
+.masonry {
+    column-count: 6;
+    column-gap: 0.5rem;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  @media (max-width: 1400px) {
+    .masonry {
+      column-count: 5;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .masonry {
+      column-count: 4;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .masonry {
+      column-count: 3;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .masonry-item:hover {
+    transform: scale(1.01);
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .masonry-item img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
+
+  .gif-label {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: #000000cc;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    z-index: 10;
+  }
