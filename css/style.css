@@ -1844,112 +1844,47 @@ form label {
   opacity: 0;
 }
 
-.masonry {
-  column-count: 6;
-  column-gap: 0.5rem;
-  max-width: 100%;
-  padding: 1rem;
-}
-
-@media (max-width: 1400px) {
-  .masonry {
-    column-count: 5;
-  }
-}
-
-@media (max-width: 1024px) {
-  .masonry {
-    column-count: 4;
-  }
-}
-
-@media (max-width: 768px) {
-  .masonry {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 480px) {
-  .masonry {
-    column-count: 2;
-  }
-}
-
-/* Struktur tetap seperti punyamu */
-.masonry {
-  column-count: 6;
-  column-gap: 0.5rem;
-  max-width: 100%;
-  padding: 1rem;
-}
-
-@media (max-width: 1400px) { .masonry { column-count: 5; } }
-@media (max-width: 1024px) { .masonry { column-count: 4; } }
-@media (max-width: 768px)  { .masonry { column-count: 3; } }
-@media (max-width: 480px)  { .masonry { column-count: 2; } }
-
-.masonry-item {
-  break-inside: avoid;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+.love-container {
   position: relative;
+  width: 600px;
+  height: 500px;
+  margin: 2rem auto;
+  background: #1a2d46; /* atau pakai background gambar juga bisa */
+  border-radius: 10px;
 }
 
-/* Simulasi love dengan margin-top */
-.masonry-item:nth-child(1),
-.masonry-item:nth-child(2) {
-  margin-top: 3rem;
-}
-.masonry-item:nth-child(3),
-.masonry-item:nth-child(4) {
-  margin-top: 1rem;
-}
-.masonry-item:nth-child(5),
-.masonry-item:nth-child(6) {
-  margin-top: -1rem;
-}
-.masonry-item:nth-child(7),
-.masonry-item:nth-child(8) {
-  margin-top: 0;
-}
-.masonry-item:nth-child(9) {
-  margin-top: 1rem;
-}
-.masonry-item:nth-child(10) {
-  margin-top: 2rem;
-}
-.masonry-item:nth-child(11),
-.masonry-item:nth-child(12) {
-  margin-top: 3rem;
-}
-
-/* Hover & gambar */
-.masonry-item:hover {
-  transform: scale(1.01);
-  z-index: 10;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.masonry-item img {
-  width: 100%;
-  display: block;
-  border-radius: 0.5rem;
-}
-
-/* Label GIF */
-.gif-label {
+.love-container img {
   position: absolute;
-  top: 6px;
-  left: 6px;
-  background: #000000cc;
-  color: white;
-  font-size: 0.7rem;
-  padding: 2px 6px;
-  border-radius: 4px;
-  z-index: 10;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
+/* Posisi manual biar membentuk hati */
+.img1  { top: 20px;  left: 80px; }
+.img2  { top: 20px;  left: 200px; }
+.img3  { top: 20px;  left: 320px; }
+.img4  { top: 20px;  left: 440px; }
 
+.img5  { top: 100px; left: 40px; }
+.img6  { top: 100px; left: 140px; }
+.img7  { top: 100px; left: 240px; }
+.img8  { top: 100px; left: 340px; }
+.img9  { top: 100px; left: 440px; }
+
+.img10 { top: 180px; left: 80px; }
+.img11 { top: 180px; left: 180px; }
+.img12 { top: 180px; left: 280px; }
+.img13 { top: 180px; left: 380px; }
+
+.img14 { top: 260px; left: 120px; }
+.img15 { top: 260px; left: 220px; }
+.img16 { top: 260px; left: 320px; }
+
+.img17 { top: 340px; left: 170px; }
+.img18 { top: 340px; left: 270px; }
+
+.img19 { top: 420px; left: 220px; }
