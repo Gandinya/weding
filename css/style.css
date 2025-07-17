@@ -1875,6 +1875,19 @@ form label {
   }
 }
 
+/* Struktur tetap seperti punyamu */
+.masonry {
+  column-count: 6;
+  column-gap: 0.5rem;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+@media (max-width: 1400px) { .masonry { column-count: 5; } }
+@media (max-width: 1024px) { .masonry { column-count: 4; } }
+@media (max-width: 768px)  { .masonry { column-count: 3; } }
+@media (max-width: 480px)  { .masonry { column-count: 2; } }
+
 .masonry-item {
   break-inside: avoid;
   margin-bottom: 0.5rem;
@@ -1885,14 +1898,14 @@ form label {
   position: relative;
 }
 
-/* Tambahan untuk bentuk love simulasi */
+/* Simulasi love dengan margin-top */
 .masonry-item:nth-child(1),
 .masonry-item:nth-child(2) {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .masonry-item:nth-child(3),
 .masonry-item:nth-child(4) {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 .masonry-item:nth-child(5),
 .masonry-item:nth-child(6) {
@@ -1913,6 +1926,7 @@ form label {
   margin-top: 3rem;
 }
 
+/* Hover & gambar */
 .masonry-item:hover {
   transform: scale(1.01);
   z-index: 10;
@@ -1925,6 +1939,7 @@ form label {
   border-radius: 0.5rem;
 }
 
+/* Label GIF */
 .gif-label {
   position: absolute;
   top: 6px;
@@ -1936,4 +1951,5 @@ form label {
   border-radius: 4px;
   z-index: 10;
 }
+
 
